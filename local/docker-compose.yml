@@ -1,0 +1,39 @@
+
+services:
+  mongodb:
+    image: mongo
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=admin
+      - MONGO_INITDB_ROOT_PASSWORD=123
+    volumes:
+      - mongo-data:/data/db
+
+  rabbitmq:
+    image: rabbitmq:3.13-management
+    container_name: rabbitmq
+    ports:
+      - "15672:15672"
+      - "5672:5672"
+
+  app:
+    image: tiagonarita/orderms-app:latest
+    container_name: orderms-app
+    ports:
+      - "8080:8080"
+
+    environment:
+      - SPRING_DATA_MONGODB_URI=mongodb://admin:123@mongodb:27017/btgpactualdb?authSource=admin
+
+      - SPRING_RABBITMQ_HOST=rabbitmq
+      - SPRING_RABBITMQ_USERNAME=guest
+      - SPRING_RABBITMQ_PASSWORD=guest
+
+    depends_on:
+      - mongodb
+      - rabbitmq
+
+volumes:
+  mongo-data:
