@@ -64,7 +64,7 @@ O `docker-compose` irá baixar automaticamente a imagem da aplicação (publicad
 
 1.  Clone o repositório:
     ```bash
-    git clone https://github.com/TiagoNarita/btg-pactual-chanlenger
+    git clone https://github.com/dtarcisiorbm/btg-pactual-chanlenger
     cd orderms
     cd local
     ```
