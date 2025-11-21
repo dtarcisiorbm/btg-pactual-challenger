@@ -19,7 +19,7 @@ services:
       - "5672:5672"
 
   app:
-    image: tiagonarita/orderms-app:latest
+    image: tarcisiorodrigues/orderms-app:latest
     container_name: orderms-app
     ports:
       - "8080:8080"
