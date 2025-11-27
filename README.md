@@ -73,7 +73,7 @@ O `docker-compose` irá baixar automaticamente a imagem da aplicação (publicad
     ```bash
     docker compose up -d
     ```
-    *(O `-d` executa em modo "detached", em segundo plano). O Docker irá baixar (pull) a imagem `tiagonarita/orderms-app` do Docker Hub e iniciar todos os containers.*
+    *(O `-d` executa em modo "detached", em segundo plano). O Docker irá baixar (pull) a imagem `orderms-app` do Docker Hub e iniciar todos os containers.*
 
 3.  É isso! Os containers estarão rodando.
     * A aplicação estará disponível em: `http://localhost:8080`
