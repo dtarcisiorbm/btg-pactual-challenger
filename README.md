@@ -5,7 +5,7 @@ Este projeto é a solução para o Desafio Técnico do BTG Pactual, focado no pr
 A aplicação utiliza **Java com Spring Boot** para criar um consumidor que processa mensagens de uma fila do **RabbitMQ** e as persiste em um banco de dados **MongoDB**. Além disso, expõe uma **API REST** para consultar os dados processados.
 
 > **Contexto:** Este repositório contém a minha solução para o Desafio Técnico Back-end do BTG Pactual.
-> O descritivo original do problema pode ser consultado [neste link](https://github.com/buildrun-tech/buildrun-desafio-backend-btg-pactual/blob/main/problem.md).
+
 
 ## 🚀 Funcionalidades
 
